@@ -17,7 +17,7 @@ const App: FC = () => {
   }
 
   const addTask = (): void => {
-    const newTask = {taskName: task, deadline: deadline}
+    const newTask = { taskName: task, deadline: deadline };
     setTodo([...todo, newTask])
     console.log(todo)
   }
@@ -26,7 +26,7 @@ const App: FC = () => {
     <div className="App">
       <div className='header'>
         <div className='inputContainer'>
-        <input type='text' placeholder='Text...' name="task" onChange={handleChange}/>
+        <input type='text' placeholder='Text...'  name="task" onChange={handleChange}/>
         <input type='number' placeholder='Deadline (in days)...' name="deadline" />
         </div>
         <button onClick={addTask}>ADD TASK</button>

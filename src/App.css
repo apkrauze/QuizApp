@@ -14,7 +14,7 @@ body {
 
 .header {
   flex: 30%;
-  background-color: tomato;
+  background-color: rgb(245, 172, 159);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@ body {
   border-top-left-radius: 8px;
   padding-left: 10px;
   font-size: 17px;
-  border: 1px solid grey;
+  border: 1px solid rgb(133, 71, 71);
 }
 
 .header button {
@@ -45,6 +45,8 @@ body {
   border-top-right-radius: 8px;
   padding-left: 10px;
   cursor: pointer;
+  color: white;
+  background-color: rgb(133, 71, 71);
 }
 
 .todoList {
