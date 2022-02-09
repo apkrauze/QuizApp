@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { FC} from 'react';
+import "./App.css";
 
-function App() {
+const App: FC = () => {
   return (
     <div className="App">
-      <h1>QUIZ</h1>
+      <div className='header'>
+        <div className='inputContainer'>
+        <input type='text' placeholder='Text...' />
+        <input type='number' placeholder='Deadline (in days)...' />
+        </div>
+        <button>ADD TASK</button>
+      </div>
+      <div className='todoList'></div>
     </div>
   );
 }
