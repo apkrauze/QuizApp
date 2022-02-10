@@ -1,6 +1,6 @@
-import React, { ChangeEvent, FC, useState} from 'react';
+import React, { ChangeEvent, FC, useState } from 'react';
 import "./App.css";
-import {ITask} from "./interfaces";
+import { ITask } from "./interfaces";
 
 const App: FC = () => {
 
@@ -9,7 +9,7 @@ const App: FC = () => {
   const [todo, setTodo] = useState<ITask[]>([]);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
-    if(event.target.value === "task"){
+    if(event.target.name === "task"){
       setTask(event.target.value)
     } else {
       setDeadline(Number(event.target.value));
@@ -27,11 +27,13 @@ const App: FC = () => {
       <div className='header'>
         <div className='inputContainer'>
         <input type='text' placeholder='Text...'  name="task" onChange={handleChange}/>
-        <input type='number' placeholder='Deadline (in days)...' name="deadline" />
+        <input type='number' placeholder='Deadline (in days)...' name="deadline" onChange={handleChange}/>
         </div>
         <button onClick={addTask}>ADD TASK</button>
       </div>
-      <div className='todoList'></div>
+      <div className='todoList'>
+        
+      </div>
     </div>
   );
 }
