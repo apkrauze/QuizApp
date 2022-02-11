@@ -32,7 +32,10 @@ const App: FC = () => {
         <button onClick={addTask}>ADD TASK</button>
       </div>
       <div className='todoList'>
-        
+        <div className='todoContainer'>
+          <h1>Here comes the output from header</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nisi quasi error nemo magnam, vitae, debitis iste libero soluta cupiditate ad deserunt id mollitia officia, sint sunt dignissimos facilis atque.</p>
+        </div>
       </div>
     </div>
   );
